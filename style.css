@@ -2,6 +2,7 @@ body {
     height: 100vh;
     width: 100vw;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
     background-color: black;
     font-family: Eczar, serif;
@@ -11,17 +12,16 @@ body {
 .all {
     height: 100vh;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .project {
-    width: 500px;
+    width: 700px;
     height: 400px;
-    /* border: 1px solid black; */
     border-radius: 50%;
-    /* box-shadow: 0px 0px 20px rgb(49, 49, 49); */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,6 +42,7 @@ h1 {
     align-items: center;
     text-transform: uppercase;
     font-size: 40px;
+    font-weight: 100;
     letter-spacing: 5px;
     text-shadow: 2px -1px 2px rgb(226, 177, 109), 2px -3px 2px rgba(190, 44, 44, 0);
     color: rgb(245, 242, 236);
@@ -77,33 +78,30 @@ h1 {
     font-style: italic;
     text-align: center;
     width: 500px;
+    border-bottom: 1px solid;
     margin-bottom: 20px;
     margin-top: 10px;
 }
 
-.empty {
-visibility: hidden;
-padding: 0;
-margin: 0;
-}
 
 .github, .live {
-    text-decoration: 1px solid grey underline;
+    text-decoration: 1px solid rgba(0, 0, 0, 0.178) underline;
     font-size: 1.5rem;
     font-weight: 500;
+    line-height: 3;
     color: rgb(3, 3, 3);
     padding: 15px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
 }
 
 .hover i {
     color: rgb(104, 100, 100);
     text-shadow: 2px 2px 2px rgb(46, 46, 46);
-
+    padding: 10px;
 }
 
 .name {
-    width: 500px;
+    width: 700px;
     height: 400px;
     border: 2px solid rgb(245, 242, 236);
     border-radius: 50%;
@@ -126,7 +124,7 @@ margin: 0;
 }
 
 .github:hover, .live:hover {
-    box-shadow: 10px 13px 15px 6px rgba(0, 0, 0, 0.66);
+    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.26), -5px -5px 5px 2px rgba(0, 0, 0, 0.26);
     transition: 0.3s;
     border-radius: 50%;
 }
