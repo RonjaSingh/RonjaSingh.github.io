@@ -13,6 +13,7 @@ main {
     justify-content: center;
 }
 
+
 img {
     position: relative;
     width: 380px;
@@ -22,7 +23,6 @@ img {
     opacity: 0.8;
     box-shadow: 0 0 200px 30px rgba(123, 116, 131, 0.6);
 }
-
 
 .name,
 .name2 {
@@ -102,6 +102,7 @@ button {
 
 a {
     text-decoration: none;
+    transition: 1s;
 }
 
 .squares:hover button,
@@ -113,7 +114,6 @@ h2 {
     opacity: 1;
     text-shadow: 3px 5px 2px #303030;
     transition: 1.2s;
-    transition-timing-function: linear;
 }
 
 
@@ -125,7 +125,7 @@ main:hover img {
 footer,
 header {
     position: fixed;
-    left: 0;
+    /* left: 0; */
     width: 100%;
     line-height: 3;
     padding: 10px;
