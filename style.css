@@ -82,6 +82,7 @@ body {
   width: 280px;
   border-radius: 20px;
   transition: 0.3s ease;
+  position: relative;
 }
 
 .card:hover {
@@ -93,6 +94,20 @@ body {
   margin-bottom: 15px;
 }
 
+.project-icon {
+  display: inline-block;
+  font-size: 20px;
+  text-decoration: none;
+  line-height: 4;
+  color: white;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.card:hover .project-icon {
+  opacity: 1;
+  transform: translateY(-4px);
+}
 
 footer {
   padding: 30px;
