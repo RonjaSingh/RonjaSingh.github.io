@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #30027a;
+  color: white;
+  line-height: 1.6;
+}
+
+
+
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #30027a, #1e293b);
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 64px;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  margin: 20px 0;
+  font-size: 20px;
+  color: #94a3b8;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: #5f56e0;
+  color: #e6e4eb;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #5c53d6;
+  transform: scale(1.05);
+}
+
+
+.about {
+  padding: 80px 20px;
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+.about h2 {
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+
+.projects {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.project-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.card {
+  background: #120c46;
+  padding: 30px;
+  width: 280px;
+  border-radius: 20px;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background: #334155;
+}
+
+.card h3 {
+  margin-bottom: 15px;
+}
+
+
+footer {
+  padding: 30px;
+  text-align: center;
+  background: #30027a;
+  color: #64748b;
+}
