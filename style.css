@@ -18,43 +18,52 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #30027a, #1e293b);
+  background: radial-gradient(#6D28D955, transparent 60%);
   text-align: center;
 }
 
 .hero-content h1 {
-  font-size: 64px;
-  letter-spacing: 2px;
+  font-size: 60px;
+  color: white;
+
+  color: #F3F0FF;
+  text-shadow: 0 0 2px #610f0f;
+  letter-spacing: 4px;
 }
 
 .subtitle {
-  margin: 20px 0;
-  font-size: 20px;
+  margin: 22px 0;
+  font-size: 30px;
   color: #94a3b8;
 }
 
 .btn {
   display: inline-block;
-  padding: 12px 28px;
-  background: #5f56e0;
-  color: #e6e4eb;
+  padding: 20px 60px;
+  margin: 10px;
+  background: #610f0f;
+  color: white;
   text-decoration: none;
   font-weight: bold;
+  font-size: large;
   border-radius: 30px;
   transition: 0.3s ease;
 }
 
 .btn:hover {
-  background: #5c53d6;
+  background: #661010;
   transform: scale(1.05);
 }
 
 
 .about {
-  padding: 80px 20px;
+  width: 100%;
+  padding: 60px 20px;
   text-align: center;
-  max-width: 800px;
-  margin: auto;
+  max-width: none;
+  margin: 0;
+  text-shadow: 0 0 6px #610f0f;
+  background: #610f0f
 }
 
 .about h2 {
@@ -66,6 +75,7 @@ body {
 .projects {
   padding: 80px 20px;
   text-align: center;
+  text-shadow: 0 0 6px #610f0f;
 }
 
 .project-grid {
@@ -87,7 +97,7 @@ body {
 
 .card:hover {
   transform: translateY(-10px);
-  background: #334155;
+  background: #610f0f;
 }
 
 .card h3 {
