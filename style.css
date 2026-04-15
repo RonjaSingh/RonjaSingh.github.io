@@ -4,78 +4,124 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Segoe UI", sans-serif;
-  background: #30027a;
-  color: white;
-  line-height: 1.6;
+html {
+  scroll-behavior: smooth;
 }
 
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #0F0A1F;
+  color: #9895bf;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
 
+}
 
 .hero {
-  height: 100vh;
+  height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(#6D28D955, transparent 60%);
   text-align: center;
+  background: radial-gradient(circle at top, #51209f, transparent 70%);
+  margin-bottom: 30px;
 }
 
 .hero-content h1 {
-  font-size: 60px;
-  color: white;
-
-  color: #F3F0FF;
-  text-shadow: 0 0 2px #610f0f;
-  letter-spacing: 4px;
+  font-size: 56px;
+  letter-spacing: 2px;
+  background: linear-gradient(90deg, #a77fce, #6D28D9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .subtitle {
-  margin: 22px 0;
-  font-size: 30px;
-  color: #94a3b8;
+  margin: 20px 0;
+  font-size: 28px;
+  color: #A78BFA;
 }
+
+.hero-text {
+  margin-bottom: 20px;
+  color: #cbd5f5;
+  font-size: 18px;
+}
+
 
 .btn {
   display: inline-block;
-  padding: 20px 60px;
-  margin: 10px;
-  background: #610f0f;
-  color: white;
+  padding: 16px 52px;
+  margin-top: 25px;
+  background: linear-gradient(135deg, #6D28D9, #7d52e1);
+  color: #ccc9d8;
   text-decoration: none;
-  font-weight: bold;
-  font-size: large;
-  border-radius: 30px;
-  transition: 0.3s ease;
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 16px;
+  letter-spacing: 0.5px;
+
+  transition: transform 0.35s ease, box-shadow 0.35s ease, filter 0.35s ease;
+  will-change: transform;
 }
 
 .btn:hover {
-  background: #661010;
-  transform: scale(1.05);
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(109, 40, 217, 0.25);
+  filter: brightness(1);
+}
+
+.btn:active {
+  transform: translateY(0px) scale(0.98);
+}
+
+.section {
+  padding: 80px 20px;
+  background: linear-gradient(to bottom, #1A1333, #140f2a);
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.contact {
+  background: #140f2a;
+  padding: 40px 20px;
+  margin-top: 10px;
 }
 
 
 .about {
-  width: 100%;
-  padding: 60px 20px;
-  text-align: center;
-  max-width: none;
-  margin: 0;
-  text-shadow: 0 0 6px #610f0f;
-  background: #610f0f
+  margin-top: 40px;
 }
 
-.about h2 {
+.section h2 {
   margin-bottom: 20px;
   font-size: 32px;
 }
 
 
+.section p {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+
+.section a {
+  color: #C084FC;
+  text-decoration: none;
+}
+
+.section a:hover {
+  text-decoration: underline;
+}
+
 .projects {
   padding: 80px 20px;
   text-align: center;
-  text-shadow: 0 0 6px #610f0f;
+  background: #0F0A1F;
+  margin-top: 60px;
 }
 
 .project-grid {
@@ -83,45 +129,52 @@ body {
   gap: 30px;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 40px;
-}
+  margin-top: 40px;}
 
-.card {
-  background: #120c46;
+  .card {
+  background: rgba(30, 27, 75, 0.6);
+  backdrop-filter: blur(10px);
   padding: 30px;
   width: 280px;
-  border-radius: 20px;
-  transition: 0.3s ease;
-  position: relative;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: all 0.25s ease;
+
 }
 
 .card:hover {
-  transform: translateY(-10px);
-  background: #610f0f;
+  transform: translateY(-6px);
+  border-color: rgba(192, 132, 252, 0.4);
 }
 
-.card h3 {
-  margin-bottom: 15px;
-}
+  .card h3 {
+    margin-bottom: 15px;
+  }
 
-.project-icon {
+
+  .project-icon {
   display: inline-block;
-  font-size: 20px;
   text-decoration: none;
-  line-height: 4;
-  color: white;
-  opacity: 0;
-  transition: 0.3s ease;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #C084FC;
+  transition: 0.2s ease;
 }
 
-.card:hover .project-icon {
-  opacity: 1;
-  transform: translateY(-4px);
+.project-icon:hover {
+  transform: translateY(-2px);
+  color: #E9D5FF;
 }
 
-footer {
-  padding: 30px;
-  text-align: center;
-  background: #30027a;
-  color: #64748b;
-}
+
+  .card strong {
+    color: #A78BFA;
+  }
+
+
+  footer {
+    padding: 30px;
+    text-align: center;
+    background: #0F0A1F;
+    color: #A78BFA;
+  }
