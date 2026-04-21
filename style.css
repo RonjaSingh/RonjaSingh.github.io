@@ -18,7 +18,7 @@ body {
 }
 
 .hero {
-  height: 80vh;
+  min-height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,7 +50,7 @@ body {
 
 .btn {
   display: inline-block;
-  min-width: 220px;
+  min-width: 160px;
   padding: 16px 52px;
   margin-top: 25px;
   margin-right: 18px;
@@ -97,7 +97,7 @@ body {
 
 
 .about {
-  height: 85vh;
+ min-height: 80vh;
   display: flex;
 }
 
@@ -186,4 +186,73 @@ footer {
   text-align: center;
   background: #0F0A1F;
   color: #A78BFA;
+}
+
+@media (max-width: 768px) {
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+
+  .hero-text {
+    font-size: 16px;
+  }
+
+  .btn {
+    min-width: 160px;
+    padding: 12px 20px;
+    font-size: 15px;
+  }
+
+  .section h2 {
+    font-size: 26px;
+  }
+
+  .section p {
+    font-size: 16px;
+  }
+
+  .card {
+    width: 240px;
+    padding: 20px;
+  }
+}
+
+
+@media (max-width: 350px) {
+
+  .hero-content h1 {
+    font-size: 26px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .hero-text {
+    font-size: 14px;
+  }
+
+  .btn {
+    min-width: 120px;
+    padding: 10px 14px;
+    font-size: 13px;
+  }
+
+  .section h2 {
+    font-size: 22px;
+  }
+
+  .section p {
+    font-size: 14px;
+  }
+
+  .card {
+    width: 200px;
+    padding: 16px;
+  }
 }
